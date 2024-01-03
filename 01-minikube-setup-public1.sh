@@ -2,6 +2,7 @@
 
 export KUBECONFIG=$HOME/.kube/public1
 export QDROUTERD_IMAGE=quay.io/skupper/skupper-router:main
+#export SKUPPER_SERVICE_CONTROLLER_IMAGE=quay.io/nluaces/service-controller:latest
 minikube start 
 kubectl create namespace public1
 kubectl config set-context --current --namespace public1
